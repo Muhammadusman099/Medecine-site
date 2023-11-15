@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@200;300;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Sora", sans-serif;
+}
+
+.site_header {
+  background: rgba(136, 221, 51, 0.0666666667);
+  width: 100%;
+}
+.site_header .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site_header .header .site_logo {
+  margin: 10px 0;
+}
+.site_header .header .site_logo a {
+  font-size: 20px;
+  font-weight: 500;
+  color: #8D31EB;
+  text-decoration: none;
+}
+.site_header .header .site_mav {
+  padding-top: 20px;
+}
+.site_header .header .site_mav ul {
+  display: flex;
+  gap: 1rem;
+}
+.site_header .header .site_mav ul a {
+  font-size: 18px;
+  font-weight: 400;
+  color: #8D31EB;
+  text-decoration: none;
+}
+.site_header .header .toggle_btn {
+  font-size: 25px;
+  color: #8D31EB;
+  cursor: pointer;
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .site_mav {
+    display: none !important;
+  }
+  .toggle_btn {
+    display: block !important;
+  }
+}
+.banner_sec {
+  background: rgba(136, 221, 51, 0.0666666667);
+  height: 100vh;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,46 @@
+.site_header {
+  background:#8D31;
+  width: 100%;
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .site_logo{
+      margin:10px 0;
+      a{
+        font-size: 20px;
+        font-weight: 500;
+        color: #8D31EB;
+        text-decoration: none;
+      }
+    }
+    .site_mav{
+      padding-top: 20px;
+      ul{
+        display: flex;
+        gap:1rem;
+        a{
+          font-size:18px;
+          font-weight: 400;
+          color:#8D31EB;
+          text-decoration: none;
+        }
+      }
+    }
+    .toggle_btn{
+      font-size: 25px;
+      color:#8D31EB;
+      cursor: pointer;
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .site_mav{
+    display: none !important;
+  }
+  .toggle_btn{
+    display: block !important;
+  }
+}
