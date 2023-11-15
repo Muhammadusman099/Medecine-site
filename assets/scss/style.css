@@ -26,7 +26,7 @@
 .site_header .header .site_logo a {
   font-size: 20px;
   font-weight: 500;
-  color: #8D31EB;
+  color: #8d31eb;
   text-decoration: none;
 }
 .site_header .header .site_mav {
@@ -39,12 +39,12 @@
 .site_header .header .site_mav ul a {
   font-size: 18px;
   font-weight: 400;
-  color: #8D31EB;
+  color: #8d31eb;
   text-decoration: none;
 }
 .site_header .header .toggle_btn {
   font-size: 25px;
-  color: #8D31EB;
+  color: #8d31eb;
   cursor: pointer;
   display: none;
 }
@@ -60,4 +60,36 @@
 .banner_sec {
   background: rgba(136, 221, 51, 0.0666666667);
   height: 100vh;
+}
+.banner_sec .banner_content {
+  margin: 150px 0;
+}
+.banner_sec .banner_content h1 {
+  font-weight: 600;
+  color: #000000;
+  text-shadow: #383638;
+}
+.banner_sec .banner_content p {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.banner_sec .banner_content a {
+  background: #8d31eb;
+  color: white;
+  padding: 13px 30px;
+  text-decoration: none;
+  font-size: 18px;
+}
+.banner_sec .banner_content a:hover {
+  border: 2px solid #8d31eb;
+  color: #8d31eb;
+  background: none;
+  transition: 0.5s;
+}
+.banner_sec .banner_img {
+  margin-left: 100px;
+}
+.banner_sec .banner_img img {
+  width: 400px;
 }/*# sourceMappingURL=style.css.map */
