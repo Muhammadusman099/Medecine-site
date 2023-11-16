@@ -1,0 +1,32 @@
+.Testimonial_sec{
+    margin: 20px 0;
+    .testimonial_content{
+        h4{
+            font-size:25px;
+            font-weight: 600;
+            text-shadow: 2px  #383638;
+            text-align: center;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px 0;
+            color: #8d31eb;
+        }
+        p{
+            text-align: center;
+            font-size: 18px;
+            font-weight: 300;
+            color:#383638;
+        }
+        span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 600;
+            text-shadow: 2px #383638;
+        }
+    }
+}

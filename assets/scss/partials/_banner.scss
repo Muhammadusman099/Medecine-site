@@ -6,7 +6,7 @@
         h1 {
             font-weight: 600;
             color: #000000;
-            text-shadow: #383638;
+            text-shadow: 2px #383638;
         }
         p {
             font-size: 18px;
@@ -32,5 +32,14 @@
         img {
             width: 400px;
         }
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .banner_content{
+        margin-top: 40px !important;
+    }
+    .banner_img{
+        display: none !important;
     }
 }
