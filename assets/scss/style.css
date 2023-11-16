@@ -230,4 +230,38 @@
   font-size: 18px;
   font-weight: 300;
   transition: 0.5s;
+}
+
+#Meassage {
+  background: rgba(0, 0, 255, 0.03);
+}
+#Meassage .message_content {
+  margin: 100px 0;
+}
+#Meassage .message_content h4 {
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 2px #383638;
+}
+#Meassage .message_content p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #383638;
+}
+#Meassage .message_content h6 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #383638;
+  text-shadow: 2px #383638;
+}
+#Meassage .message_content span {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 992px) {
+  .message_content {
+    margin: 0 !important;
+    padding-top: 50px;
+  }
 }/*# sourceMappingURL=style.css.map */
