@@ -1,19 +1,46 @@
-.Team_sec{
-  .content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    h4{
-        font-size: 30px;
-        font-weight: 600;
-        text-shadow: 2px #383638;
+#Team {
+    .content {
+        h4 {
+            font-size: 30px;
+            font-weight: 600;
+            text-shadow: 2px #383638;
+            text-align: center;
+        }
+        p {
+            font-size: 17px;
+            font-weight: 300;
+            text-shadow: 2px #383638;
+            text-align: center;
+        }
     }
-    p{
-        font-size: 17px;
-        font-weight: 300;
-        text-shadow: 2px #383638;
-        text-align: center;
+    .our_team {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h6 {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 500;
+            text-shadow: 2px #383638;
+            padding-top: 10px;
+        }
+        span {
+            font-size: 15px;
+            font-weight: 300;
+            color: #383638;
+        }
     }
-  }
+    .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+        a{
+            background:#8d31eb;
+            font-size:18px;
+            font-weight: 500;
+            padding: 7px 20px;
+        }
+    }
 }
