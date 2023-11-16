@@ -343,4 +343,49 @@
   font-size: 15px;
   font-weight: 400;
   color: #383638;
+}
+
+#commitment {
+  margin: 0;
+}
+#commitment .right_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+#commitment .right_1 h4 {
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 2px #383638;
+}
+#commitment .right_1 p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #383638;
+}
+#commitment .commitment_content {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: #f7f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#commitment .commitment_content .right {
+  width: 200px;
+  height: 70px;
+  background: #D9D9D9;
+  margin-left: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#commitment .commitment_content .left h6 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 10px 10px;
+}
+#commitment .commitment_content .left p {
+  font-size: 13px;
+  font-weight: 400;
+  padding-left: 10px;
 }/*# sourceMappingURL=style.css.map */
