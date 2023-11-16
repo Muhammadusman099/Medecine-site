@@ -138,6 +138,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: rgba(255, 0, 0, 0.01);
 }
 .probiotics_sec h4 {
   display: flex;
@@ -211,11 +212,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px 0;
+  margin: 30px 0;
 }
 #Team .btn a {
   background: #8d31eb;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 300;
   padding: 7px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 2px;
+}
+#Team .btn a:hover {
+  background: none;
+  color: #8d31eb;
+  border: 1px solid #8d31eb;
+  font-size: 18px;
+  font-weight: 300;
+  transition: 0.5s;
 }/*# sourceMappingURL=style.css.map */
