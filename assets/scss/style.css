@@ -96,7 +96,7 @@
 
 @media only screen and (max-width: 992px) {
   .banner_content {
-    margin-top: 40px !important;
+    margin-top: 100px !important;
   }
   .banner_img {
     display: none !important;
@@ -314,4 +314,33 @@
   font-size: 15px;
   font-weight: 500;
   transition: 0.5s;
+}
+
+#blog {
+  margin: 50px 0;
+}
+#blog h4 {
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 2px #383638;
+  text-align: center;
+}
+#blog .blog_content img {
+  width: 350px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#blog .blog_content h6 {
+  font-size: 15px;
+  font-weight: 600;
+  padding-top: 15px;
+  text-shadow: 2px #383638;
+  color: black;
+}
+#blog .blog_content p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #383638;
 }/*# sourceMappingURL=style.css.map */

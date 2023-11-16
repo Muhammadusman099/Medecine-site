@@ -1,0 +1,30 @@
+#blog{
+    margin: 50px 0;
+    h4{
+        font-size: 30px;
+        font-weight: 600;
+        text-shadow: 2px #383638;
+        text-align: center;
+    }
+    .blog_content{
+        img{
+            width: 350px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h6{
+            font-size: 15px;
+            font-weight: 600;
+            padding-top: 15px;
+            text-shadow: 2px #383638;
+            color:black;
+       }
+        p{
+            font-size: 15px;
+            font-weight: 400;
+            color: #383638;
+        }
+    }
+}
