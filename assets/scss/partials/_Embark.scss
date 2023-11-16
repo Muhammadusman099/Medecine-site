@@ -1,0 +1,52 @@
+#Embark{
+    margin: 50px 0;
+    h4{
+        font-size: 30px;
+        font-weight: 600;
+        text-shadow: 2px #383638;
+        text-align: center;
+    }
+    .embark_content{
+        img{
+            width: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h6{
+            font-size: 18px;
+            font-weight: 600;
+            text-shadow: 2px #383638;
+            padding-top:10px;
+            color: black;
+        }
+        p{
+            width: 90%;
+            font-size: 15px;
+            font-weight: 400;
+            color: #383638;
+        }
+    }
+    .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            background:#8d31eb;
+            padding:7px 13px;
+            font-size:15px;
+            font-weight: 500;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 2px;
+            &:hover{
+                background:none;
+                border:2px solid #8d31eb;
+                color: #8d31eb;
+                font-size: 15px;
+                font-weight: 500;
+                transition: 0.5s;
+            }
+        }
+    }
+}

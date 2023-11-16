@@ -264,4 +264,54 @@
     margin: 0 !important;
     padding-top: 50px;
   }
+}
+#Embark {
+  margin: 50px 0;
+}
+#Embark h4 {
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 2px #383638;
+  text-align: center;
+}
+#Embark .embark_content img {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Embark .embark_content h6 {
+  font-size: 18px;
+  font-weight: 600;
+  text-shadow: 2px #383638;
+  padding-top: 10px;
+  color: black;
+}
+#Embark .embark_content p {
+  width: 90%;
+  font-size: 15px;
+  font-weight: 400;
+  color: #383638;
+}
+#Embark .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Embark .btn a {
+  background: #8d31eb;
+  padding: 7px 13px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 2px;
+}
+#Embark .btn a:hover {
+  background: none;
+  border: 2px solid #8d31eb;
+  color: #8d31eb;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.5s;
 }/*# sourceMappingURL=style.css.map */
