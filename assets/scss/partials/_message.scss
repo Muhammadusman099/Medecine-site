@@ -23,6 +23,11 @@
             font-weight: 300;
         }
     }
+    .message_img{
+        img{
+            width: 500px;
+        }
+    }
 }
 
 
@@ -30,5 +35,10 @@
     .message_content{
         margin: 0 !important;
         padding-top:50px;
+    }
+    .message_img{
+        img{
+            width:400px !important;
+        }
     }
 }

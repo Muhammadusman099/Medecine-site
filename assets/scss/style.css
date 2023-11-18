@@ -96,7 +96,15 @@
 
 @media only screen and (max-width: 992px) {
   .banner_content {
-    margin-top: 100px !important;
+    margin-top: 200px !important;
+  }
+  .banner_img {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .banner_content {
+    margin-top: 50px !important;
   }
   .banner_img {
     display: none !important;
@@ -153,6 +161,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.probiotics_sec .product img {
+  height: 400px;
 }
 .probiotics_sec .product h4 {
   font-size: 20px;
@@ -258,11 +269,17 @@
   font-size: 15px;
   font-weight: 300;
 }
+#Meassage .message_img img {
+  width: 500px;
+}
 
 @media only screen and (max-width: 992px) {
   .message_content {
     margin: 0 !important;
     padding-top: 50px;
+  }
+  .message_img img {
+    width: 400px !important;
   }
 }
 #Embark {
@@ -316,6 +333,20 @@
   transition: 0.5s;
 }
 
+@media only screen and (max-width: 992px) {
+  .embark_content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .embark_content img {
+    width: 400px !important;
+  }
+  .embark_content p {
+    text-align: center !important;
+  }
+}
 #blog {
   margin: 50px 0;
 }
@@ -324,6 +355,12 @@
   font-weight: 600;
   text-shadow: 2px #383638;
   text-align: center;
+}
+#blog .blog_content {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
 }
 #blog .blog_content img {
   width: 350px;
@@ -345,6 +382,27 @@
   color: #383638;
 }
 
+@media only screen and (max-width: 992px) {
+  .blog_content {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .blog_content h6 {
+    font-size: 15px !important;
+    font-weight: 600;
+    padding-top: 15px;
+    text-shadow: 2px #383638;
+    color: black;
+  }
+  .blog_content p {
+    font-size: 15px !important;
+    width: 60% !important;
+    font-weight: 400;
+    color: #383638;
+    text-align: center !important;
+  }
+}
 #commitment {
   margin: 0;
 }
@@ -388,4 +446,64 @@
   font-size: 13px;
   font-weight: 400;
   padding-left: 10px;
+}
+
+#FAQ h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 2px #383638;
+}
+#FAQ .FAQ_content {
+  max-width: 700px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid hsl(0, 100%, 96%);
+  background: rgba(0, 0, 255, 0.145);
+  cursor: pointer;
+}
+#FAQ .FAQ_content .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#FAQ .FAQ_content .question h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  text-shadow: 2px #383638;
+  padding: 5px 5px;
+}
+#FAQ .FAQ_content .answers {
+  max-height: 0;
+  overflow: hidden;
+}
+#FAQ .FAQ_content .answers p {
+  font-size: 15px;
+}
+
+.FAQ_content.active .answers {
+  max-height: 300px;
+}
+
+#Footer {
+  background: rgba(0, 0, 255, 0.145);
+}
+#Footer .footer_content {
+  text-align: center;
+  margin: 50px 0;
+}
+#Footer .footer_content h4 {
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 2px #383638;
+  text-align: center;
+}
+#Footer .footer_content p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #383638;
 }/*# sourceMappingURL=style.css.map */

@@ -37,7 +37,15 @@
 
 @media only screen and (max-width: 992px){
     .banner_content{
-        margin-top: 100px !important;
+        margin-top: 200px !important;
+    }
+    .banner_img{
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 576px){
+    .banner_content{
+        margin-top: 50px !important;
     }
     .banner_img{
         display: none !important;
