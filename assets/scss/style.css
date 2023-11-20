@@ -502,20 +502,51 @@
 }
 
 #Footer {
-  background: rgba(0, 0, 255, 0.145);
+  background: #f7efff;
 }
 #Footer .footer_content {
   text-align: center;
   margin: 50px 0;
 }
-#Footer .footer_content h4 {
-  font-size: 30px;
-  font-weight: 600;
-  text-shadow: 2px #383638;
-  text-align: center;
+#Footer .footer_content h2 {
+  color: #000;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px; /* 108.333% */
+  text-transform: capitalize;
 }
 #Footer .footer_content p {
+  color: #000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 16px;
-  font-weight: 300;
-  color: #383638;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+}
+
+.footer_end {
+  margin-top: 10px;
+}
+.footer_end .logo a {
+  color: #8d31eb;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 116.667% */
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.footer_end .F_nav ul {
+  display: flex;
+  gap: 2rem;
+  padding-top: 2px;
+}
+.footer_end .F_nav ul a {
+  text-decoration: none;
+  color: #8d31eb;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
 }/*# sourceMappingURL=style.css.map */
