@@ -24,9 +24,12 @@
   margin: 10px 0;
 }
 .site_header .header .site_logo a {
-  font-size: 20px;
-  font-weight: 500;
   color: #8d31eb;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 116.667% */
+  text-transform: capitalize;
   text-decoration: none;
 }
 .site_header .header .site_mav {
@@ -37,9 +40,11 @@
   gap: 1rem;
 }
 .site_header .header .site_mav ul a {
-  font-size: 18px;
+  color: #8D31EB;
+  font-size: 16px;
+  font-style: normal;
   font-weight: 400;
-  color: #8d31eb;
+  line-height: 20px; /* 125% */
   text-decoration: none;
 }
 .site_header .header .toggle_btn {
@@ -62,17 +67,24 @@
   height: 100vh;
 }
 .banner_sec .banner_content {
-  margin: 150px 0;
+  margin: 130px 0;
 }
 .banner_sec .banner_content h1 {
-  font-weight: 600;
-  color: #000000;
-  text-shadow: 2px #383638;
+  color: var(--Secondary-Text, #383638);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 .banner_sec .banner_content p {
+  color: var(--Secondary-Text, #383638);
   font-size: 18px;
-  font-weight: 300;
-  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 116.667% */
+  text-transform: capitalize;
 }
 .banner_sec .banner_content a {
   background: #8d31eb;
