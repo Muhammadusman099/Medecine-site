@@ -1,0 +1,32 @@
+#vision {
+    background: #f7efff;
+    padding: 50px 100px;
+    .vission_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background:#fff;
+        img{
+            padding-top:10px;
+        }
+        h4 {
+            color: #383638;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 28px; /* 116.667% */
+            text-transform: capitalize;
+        }
+        p {
+            color: #383638;
+            text-align: center;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px; /* 125% */
+            text-align: center;
+        }
+    }
+}

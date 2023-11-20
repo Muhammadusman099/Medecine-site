@@ -549,4 +549,73 @@
   font-style: normal;
   font-weight: 400;
   line-height: 20px; /* 125% */
+}
+
+#vision {
+  background: #f7efff;
+  padding: 50px 100px;
+}
+#vision .vission_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: #fff;
+}
+#vision .vission_content img {
+  padding-top: 10px;
+}
+#vision .vission_content h4 {
+  color: #383638;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 116.667% */
+  text-transform: capitalize;
+}
+#vision .vission_content p {
+  color: #383638;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  text-align: center;
+}
+
+#mission {
+  margin-top: 100px;
+  background: #fff;
+}
+#mission .left h2 {
+  color: #383638;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px; /* 108.333% */
+  text-transform: capitalize;
+}
+#mission .left p {
+  color: #383638;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+}
+#mission .left a {
+  background: var(--CTA, #8d31eb);
+  color: var(--Primary-BG, #f8f8f8);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px; /* 125% */
+  text-decoration: none;
+  padding: 16px 32px;
+  transition: 0.5s;
+}
+#mission .left a:hover {
+  background: none;
+  border: 2px solid #8d31eb;
+  color: #8d31eb;
 }/*# sourceMappingURL=style.css.map */
