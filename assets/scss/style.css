@@ -11,19 +11,18 @@
   font-family: "Sora", sans-serif;
 }
 
-.site_header {
+.header {
   background: rgba(136, 221, 51, 0.0666666667);
-  width: 100%;
 }
-.site_header .header {
+
+nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
 }
-.site_header .header .site_logo {
-  margin: 10px 0;
-}
-.site_header .header .site_logo a {
+
+.logo a {
   color: #8d31eb;
   font-size: 24px;
   font-style: normal;
@@ -32,34 +31,64 @@
   text-transform: capitalize;
   text-decoration: none;
 }
-.site_header .header .site_mav {
-  padding-top: 20px;
-}
-.site_header .header .site_mav ul {
+
+.menu {
   display: flex;
-  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 }
-.site_header .header .site_mav ul a {
-  color: #8D31EB;
+
+.menu a {
+  color: #8d31eb;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px; /* 125% */
   text-decoration: none;
+  padding: 12px;
 }
-.site_header .header .toggle_btn {
-  font-size: 25px;
-  color: #8d31eb;
-  cursor: pointer;
+
+.menu-icon {
   display: none;
 }
 
-@media only screen and (max-width: 992px) {
-  .site_mav {
-    display: none !important;
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked ~ .menu {
+  transform: scale(1, 1);
+}
+
+@media only screen and (max-width: 950px) {
+  .menu {
+    flex-direction: column;
+    background-color: #8d31eb;
+    align-items: start;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    z-index: 1;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: rgba(255, 255, 255, 0.15) 1.95px 1.95px 2.6px;
   }
-  .toggle_btn {
-    display: block !important;
+  .menu a {
+    margin-left: 12px;
+    color: #fff;
+  }
+  .menu li {
+    margin-bottom: 10px;
+  }
+  .menu-icon {
+    display: block;
+    color: #8d31eb;
+    font-size: 28px;
+    cursor: pointer;
   }
 }
 .banner_sec {
@@ -116,7 +145,7 @@
 }
 @media only screen and (max-width: 576px) {
   .banner_content {
-    margin-top: 50px !important;
+    margin: 0 !important;
   }
   .banner_img {
     display: none !important;
@@ -125,11 +154,19 @@
 .Testimonial_sec {
   margin: 20px 0;
 }
+.Testimonial_sec .testimonial_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .Testimonial_sec .testimonial_content h4 {
-  font-size: 25px;
-  font-weight: 600;
-  text-shadow: 2px #383638;
-  text-align: center;
+  color: var(--Secondary-Text, #383638);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 116.667% */
+  text-transform: capitalize;
 }
 .Testimonial_sec .testimonial_content ul {
   display: flex;
@@ -139,18 +176,20 @@
   color: #8d31eb;
 }
 .Testimonial_sec .testimonial_content p {
+  color: var(--Secondary-Text, #383638);
   text-align: center;
-  font-size: 18px;
-  font-weight: 300;
-  color: #383638;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
 }
 .Testimonial_sec .testimonial_content span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  font-weight: 600;
-  text-shadow: 2px #383638;
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
 }
 
 .probiotics_sec {
@@ -161,12 +200,13 @@
   background: rgba(255, 0, 0, 0.01);
 }
 .probiotics_sec h4 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  font-weight: 600;
-  text-shadow: 2px #383638;
+  color: var(--Secondary-Text, #383638);
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px; /* 108.333% */
+  text-transform: capitalize;
 }
 .probiotics_sec .product {
   display: flex;
@@ -178,9 +218,13 @@
   height: 400px;
 }
 .probiotics_sec .product h4 {
-  font-size: 20px;
-  font-weight: 600;
-  text-shadow: 2px #383638;
+  color: var(--Secondary-Text, #383638);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 116.667% */
+  text-transform: capitalize;
 }
 .probiotics_sec .product ul {
   display: flex;
@@ -194,11 +238,11 @@
   color: #383638;
 }
 .probiotics_sec .product h6 {
-  text-align: center;
-  font-size: 18px;
-  font-weight: 600;
-  text-shadow: 2px #383638;
-  line-height: 30px;
+  color: var(--Secondary-Text, #383638);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
 }
 
 #Team .content h4 {
@@ -425,19 +469,24 @@
   justify-content: center;
   height: 90vh;
 }
-#commitment .right_1 h4 {
-  font-size: 30px;
-  font-weight: 600;
-  text-shadow: 2px #383638;
+#commitment .right_1 h2 {
+  color: #383638;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px; /* 108.333% */
+  text-transform: capitalize;
 }
 #commitment .right_1 p {
-  font-size: 15px;
-  font-weight: 400;
   color: #383638;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
 }
 #commitment .commitment_content {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background: #f7f3f3;
+  background: var(--SecondaryBlock-bg, #F7EFFF);
+  box-shadow: 0px 13px 29px 0px rgba(0, 0, 0, 0.1), 0px 52px 52px 0px rgba(0, 0, 0, 0.09), 0px 118px 71px 0px rgba(0, 0, 0, 0.05), 0px 210px 84px 0px rgba(0, 0, 0, 0.01), 0px 327px 92px 0px rgba(0, 0, 0, 0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -562,6 +611,7 @@
   justify-content: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background: #fff;
+  border-radius: 5px;
 }
 #vision .vission_content img {
   padding-top: 10px;
@@ -584,6 +634,11 @@
   text-align: center;
 }
 
+@media only screen and (max-width: 992px) {
+  .vission_content {
+    margin-top: 20px !important;
+  }
+}
 #mission {
   margin-top: 100px;
   background: #fff;
@@ -595,6 +650,7 @@
   font-weight: 700;
   line-height: 52px; /* 108.333% */
   text-transform: capitalize;
+  line-height: 100px;
 }
 #mission .left p {
   color: #383638;
@@ -613,9 +669,89 @@
   text-decoration: none;
   padding: 16px 32px;
   transition: 0.5s;
+  border-radius: 5px;
 }
 #mission .left a:hover {
   background: none;
   border: 2px solid #8d31eb;
   color: #8d31eb;
+}
+#mission .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background: var(--CTA, #8d31eb);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px 20px;
+}
+#mission .right h4 {
+  color: var(--Primary-BG, #f8f8f8);
+  /* H4 */
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 116.667% */
+  text-transform: capitalize;
+}
+#mission .right p {
+  color: var(--Primary-BG, #f8f8f8);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+}
+
+.health {
+  margin-top: 100px;
+  background: var(--SecondaryBlock-bg, #f7efff);
+}
+.health .health_content {
+  display: flex;
+  flex-direction: column;
+  margin: 110px 0;
+}
+.health .health_content h2 {
+  color: var(--Secondary-Text, #383638);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 108.333% */
+  text-transform: capitalize;
+}
+.health .health_content p {
+  color: var(--Secondary-Text, #383638);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+}
+.health .health_content span {
+  color: var(--Secondary-Text, #383638);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+}
+.health .health_content em {
+  color: var(--Secondary-Text, #383638);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 125% */
+}
+.health .health_img {
+  margin-left: 100px;
+}
+.health .health_img img {
+  width: 400px;
+}
+
+@media only screen and (max-width: 992px) {
+  .right {
+    margin-top: 100px !important;
+  }
+  .health_img {
+    margin-left: 0 !important;
+  }
 }/*# sourceMappingURL=style.css.map */

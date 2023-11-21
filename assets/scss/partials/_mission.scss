@@ -9,6 +9,7 @@
             font-weight: 700;
             line-height: 52px; /* 108.333% */
             text-transform: capitalize;
+            line-height: 100px;
         }
         p {
             color: #383638;
@@ -27,11 +28,92 @@
             text-decoration: none;
             padding: 16px 32px;
             transition: 0.5s;
-            &:hover{
+            border-radius: 5px;
+            &:hover {
                 background: none;
                 border: 2px solid #8d31eb;
-                color:#8d31eb;
+                color: #8d31eb;
             }
         }
     }
+    .right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-shrink: 0;
+        background: var(--CTA, #8d31eb);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 20px 20px;
+        h4 {
+            color: var(--Primary-BG, #f8f8f8);
+            /* H4 */
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 28px; /* 116.667% */
+            text-transform: capitalize;
+        }
+        p {
+            color: var(--Primary-BG, #f8f8f8);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px; /* 125% */
+        }
+    }
 }
+
+// Health
+.health {
+    margin-top: 100px;
+    background: var(--SecondaryBlock-bg, #f7efff);
+    .health_content {
+        display: flex;
+        flex-direction: column;
+        margin: 110px 0;
+        h2 {
+            color: var(--Secondary-Text, #383638);
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px; /* 108.333% */
+            text-transform: capitalize;
+        }
+        p {
+            color: var(--Secondary-Text, #383638);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px; /* 125% */
+        }
+        span {
+            color: var(--Secondary-Text, #383638);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 20px; /* 125% */
+        }
+        em {
+            color: var(--Secondary-Text, #383638);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px; /* 125% */
+        }
+    }
+    .health_img{
+        margin-left: 100px;
+        img{
+            width: 400px;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .right{
+        margin-top: 100px !important;
+    }
+    .health_img{
+        margin-left: 0 !important;
+    }
+  }
