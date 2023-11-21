@@ -6,11 +6,11 @@
         h1 {
             color: var(--Secondary-Text, #383638);
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            font-family: Poppins;
             font-size: 40px;
             font-style: normal;
             font-weight: 700;
             text-transform: capitalize;
+            padding-left: 12px;
         }
         p {
             color: var(--Secondary-Text, #383638);
@@ -19,6 +19,8 @@
             font-weight: 400;
             line-height: 28px; /* 116.667% */
             text-transform: capitalize;
+            padding-left: 12px;
+
         }
         a {
             background: #8d31eb;
@@ -45,7 +47,14 @@
 
 @media only screen and (max-width: 992px){
     .banner_content{
-        margin-top: 200px !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        .btn{
+            margin-left: -225px !important;
+        }
     }
     .banner_img{
         display: none !important;
@@ -53,7 +62,9 @@
 }
 @media only screen and (max-width: 576px){
     .banner_content{
-        margin: 0 !important;
+        .btn{
+            margin-left: -175px !important;
+        }
     }
     .banner_img{
         display: none !important;

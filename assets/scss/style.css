@@ -30,6 +30,7 @@ nav {
   line-height: 28px; /* 116.667% */
   text-transform: capitalize;
   text-decoration: none;
+  padding-left: 85px;
 }
 
 .menu {
@@ -101,11 +102,11 @@ nav {
 .banner_sec .banner_content h1 {
   color: var(--Secondary-Text, #383638);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: Poppins;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
   text-transform: capitalize;
+  padding-left: 12px;
 }
 .banner_sec .banner_content p {
   color: var(--Secondary-Text, #383638);
@@ -114,6 +115,7 @@ nav {
   font-weight: 400;
   line-height: 28px; /* 116.667% */
   text-transform: capitalize;
+  padding-left: 12px;
 }
 .banner_sec .banner_content a {
   background: #8d31eb;
@@ -137,15 +139,22 @@ nav {
 
 @media only screen and (max-width: 992px) {
   .banner_content {
-    margin-top: 200px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+  }
+  .banner_content .btn {
+    margin-left: -225px !important;
   }
   .banner_img {
     display: none !important;
   }
 }
 @media only screen and (max-width: 576px) {
-  .banner_content {
-    margin: 0 !important;
+  .banner_content .btn {
+    margin-left: -175px !important;
   }
   .banner_img {
     display: none !important;
@@ -460,14 +469,13 @@ nav {
   }
 }
 #commitment {
-  margin: 0;
+  margin: 50px 50px;
 }
 #commitment .right_1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90vh;
 }
 #commitment .right_1 h2 {
   color: #383638;
@@ -476,6 +484,7 @@ nav {
   font-weight: 700;
   line-height: 52px; /* 108.333% */
   text-transform: capitalize;
+  padding-top: 250px;
 }
 #commitment .right_1 p {
   color: #383638;
@@ -492,23 +501,37 @@ nav {
   justify-content: center;
 }
 #commitment .commitment_content .right {
-  width: 200px;
+  width: 300px;
   height: 70px;
   background: #D9D9D9;
   margin-left: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #commitment .commitment_content .left h6 {
-  font-size: 15px;
-  font-weight: 600;
-  margin: 10px 10px;
+  color: #383638;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  padding: 5px 20px;
 }
 #commitment .commitment_content .left p {
-  font-size: 13px;
+  color: #383638;
+  font-size: 16px;
+  font-style: normal;
   font-weight: 400;
-  padding-left: 10px;
+  padding: 5px 20px;
 }
 
+@media only screen and (max-width: 576px) {
+  .commitment_content .right {
+    margin-bottom: 100px !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .commitment_content .right {
+    margin-bottom: 100px !important;
+  }
+}
 #FAQ h4 {
   display: flex;
   align-items: center;
@@ -600,6 +623,39 @@ nav {
   line-height: 20px; /* 125% */
 }
 
+@media only screen and (max-width: 576px) {
+  .footer_content h2 {
+    font-size: 30px !important;
+  }
+  .footer_content p {
+    font-size: 15px !important;
+  }
+  .footer_end .logo a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .footer_content h2 {
+    font-size: 30px !important;
+  }
+  .footer_content p {
+    font-size: 15px !important;
+  }
+  .footer_end .logo a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center;
+  }
+  .footer_end .F_nav ul {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
 #vision {
   background: #f7efff;
   padding: 50px 100px;
